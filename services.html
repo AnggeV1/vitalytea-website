@@ -6,6 +6,7 @@
     <title>VITALY TEA | Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -143,6 +144,29 @@ footer p {
         font-size: 20px;
     }
 }
+.modal-content {
+        background-color: white;
+        border: none;
+    }
+
+    .modal-dialog {
+        max-width: 800px;
+    }
+
+    .modal-body {
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .modal-description {
+        font-size: 16px;
+        color: black;
+    }
 </style>
 <body>
     <div class="home">
@@ -168,13 +192,13 @@ All the regular services you can find in a serious printing shop.
                         <H1 class="subtitle">PAPER STOCK</H1>
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="Assets/glossy.png" class="rounded" height="150px" width="150px">
+                                <img src="Assets/glossy.png" class="rounded" height="150px" width="150px" data-bs-toggle="modal" data-bs-target="#modalGlossy">
                             </div>
                             <div class="col">
-                                <img src="Assets/matte.png" class="rounded" height="150px" width="150px">
+                                <img src="Assets/matte.png" class="rounded" height="150px" width="150px" data-bs-toggle="modal" data-bs-target="#modalmatte">
                             </div>
                             <div class="col">
-                                <img src="Assets/textured.png" class="rounded" height="150px" width="150px">
+                                <img src="Assets/textured.png" class="rounded" height="150px" width="150px" data-bs-toggle="modal" data-bs-target="#modaltextured">
                             </div>
                         </div>
                     </div>
@@ -182,13 +206,13 @@ All the regular services you can find in a serious printing shop.
                         <H1 class="subtitle">INK</H1>
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="Assets/hp.jpg" class="rounded" height="150px" width="150px">
+                                <img src="Assets/hp.jpg" class="rounded" height="150px" width="150px"  data-bs-toggle="modal" data-bs-target="#modalhp">
                             </div>
                             <div class="col">
-                                <img src="Assets/Epson.png" class="rounded" height="150px" width="150px">
+                                <img src="Assets/Epson.png" class="rounded" height="150px" width="150px" data-bs-toggle="modal" data-bs-target="#modalepson">
                             </div>
                             <div class="col">
-                                <img src="Assets/Canon.png" class="rounded" height="150px" width="150px">
+                                <img src="Assets/Canon.png" class="rounded" height="150px" width="150px" data-bs-toggle="modal" data-bs-target="#modalcanon">
                             </div>
                         </div>
                     </div>
@@ -196,13 +220,13 @@ All the regular services you can find in a serious printing shop.
                     <div class="container text-center image-container">
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="Assets/saddlestitch.png" class="rounded" height="250px" width="250px">
+                                <img src="Assets/saddlestitch.png" class="rounded" height="250px" width="250px" data-bs-toggle="modal" data-bs-target="#modalsaddlestitch">
                             </div>
                             <div class="col">
-                                <img src="Assets/heatedspine.png" class="rounded" height="250px" width="250px">
+                                <img src="Assets/heatedspine.png" class="rounded" height="250px" width="250px" data-bs-toggle="modal" data-bs-target="#modalheatedspine">
                             </div>
                             <div class="col">
-                                <img src="Assets/wirebind.png" class="rounded" height="250px" width="250px">
+                                <img src="Assets/wirebind.png" class="rounded" height="250px" width="250px" data-bs-toggle="modal" data-bs-target="#modalwirebind">
                             </div>
                         </div>
                     </div>
@@ -210,11 +234,11 @@ All the regular services you can find in a serious printing shop.
                         <div class="row align-items-center">
                             <div class="col">
                                 <h1 class="title">LAMINATING</h1>
-                                <img src="Assets/laminating.jpeg" class="rounded" height="300px" width="300px">
+                                <img src="Assets/laminating.jpeg" class="rounded" height="300px" width="300px" data-bs-toggle="modal" data-bs-target="#modallaminating">
                             </div>
                             <div class="col">
                                 <h1 class="title">CUTTING</h1>
-                                <img src="Assets/Papertrimmer.jpg" class="rounded" height="300px" width="300px">
+                                <img src="Assets/Papertrimmer.jpg" class="rounded" height="300px" width="300px" data-bs-toggle="modal" data-bs-target="#modalPapertrimmer">
                             </div>
                         </div>
                     </div>
@@ -227,6 +251,144 @@ All the regular services you can find in a serious printing shop.
             <p>+63 912 345 6789</p>
             <p>This is for education purposes only</p></i>
         </footer>
+    </div>
+
+    <div class="modal fade" id="modalGlossy" tabindex="-1" aria-labelledby="modalGlossyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/glossy.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Glossy</h5>
+                        <p class="modal-description">Glossy paper has a smooth and shiny surface that reflects light, providing vibrant and high-contrast images. It is ideal for photos and colorful designs. <i>Examples: High-end magazines, brochures, photo prints, promotional materials.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalmatte" tabindex="-1" aria-labelledby="modalmatte" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/matte.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Matte</h5>
+                        <p class="modal-description">Matte paper has a non-reflective, flat finish, offering a sophisticated and elegant look. It reduces glare and is often preferred for text-heavy designs. <i>Examples: Art prints, book covers, business cards, invitations.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modaltextured" tabindex="-1" aria-labelledby="modaltextured" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/textured.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Textured</h5>
+                        <p class="modal-description">Textured paper has a tactile surface with a distinct feel. There are various textures, such as linen, laid, or felt, adding a touch of luxury and uniqueness. <i>Examples: Wedding invitations, high-end packaging, business cards for creative professionals.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalhp" tabindex="-1" aria-labelledby="modalhp" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/hp.jpg" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Hewlett Packard</h5>
+                        <p class="modal-description">HP offers pigment ink cartridges for its OfficeJet and PageWide series printers, providing crisp text and smear-resistant prints suitable for business documents and marketing materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalepson" tabindex="-1" aria-labelledby="modalepson" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/Epson.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Epson</h5>
+                        <p class="modal-description">HP offers pigment ink cartridges for its OfficeJet and PageWide series printers, providing crisp text and smear-resistant prints suitable for business documents and marketing materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalcanon" tabindex="-1" aria-labelledby="modalcanon" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/Canon.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Canon</h5>
+                        <p class="modal-description">Canon's UVgel ink technology is used in its imagePROGRAF and Colorado series printers, offering high-speed printing on both rigid and flexible media for applications such as signage, POS displays, and décor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalsaddlestitch" tabindex="-1" aria-labelledby="modalsaddlestitch" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/saddlestitch.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Saddle Stitch</h5>
+                        <p class="modal-description">Binding folded sheets of paper or signatures together by stapling them along the spine. The sheets are nested within each other, resembling the appearance of a saddle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalheatedspine" tabindex="-1" aria-labelledby="modalheatedspine" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/heatedspine.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Heated Spine</h5>
+                        <p class="modal-description">Binding folded sheets of paper or signatures together by stapling them along the spine. The sheets are nested within each other, resembling the appearance of a saddle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalwirebind" tabindex="-1" aria-labelledby="modalwirebind" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <img src="Assets/wirebind.png" class="rounded" height="200px" width="200px">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="modal-title" id="modalGlossyLabel">Wire</h5>
+                        <p class="modal-description">Securing pages together by threading a metal wire through punched holes along the document's edge. The wire is then closed to form a secure and flexible bind.
+                            <i>Examples: Notebooks, presentations, calendars, manuals, and cookbooks.
+                            </i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
